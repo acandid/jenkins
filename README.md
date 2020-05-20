@@ -1,8 +1,8 @@
 # jenkins
 
-|Ansible-galaxy|Author|
+|Ansible-galaxy|LinkedIn|
 |--------------|------|
-|[![ansible-galaxy](https://galaxy.ansible.com/acandid)]|[![author](https://br.linkedin.com/in/almircandido)|
+|[![ansible-galaxy](https://galaxy.ansible.com/acandid)]|[![linkedin](https://br.linkedin.com/in/almircandido)|
 
 
 A simple Ansible role for installing jenkins for RHEL/CentOS 7 and Debian 10.
