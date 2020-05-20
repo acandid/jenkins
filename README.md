@@ -1,10 +1,5 @@
 # jenkins
 
-|Ansible-galaxy|LinkedIn|
-|--------------|------|
-|[![ansible-galaxy](https://galaxy.ansible.com/acandid)]|[![linkedin](https://br.linkedin.com/in/almircandido)|
-
-
 A simple Ansible role for installing jenkins for RHEL/CentOS 7 and Debian 10.
 
 - Install the necessary packages;
@@ -32,6 +27,7 @@ Example Playbook
   roles:
 
     - /path/jenkins
+---
 ```
 
 Example inventory
