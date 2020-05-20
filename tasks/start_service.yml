@@ -1,0 +1,7 @@
+---
+- name: Start and enable jenkins service
+  service:
+    name: "{{ jenkins_service }}"
+    state: started
+    enabled: true
+... 

@@ -1,0 +1,21 @@
+---
+# tasks file for jenkins
+- name: Include Variables
+  include_vars: "{{ ansible_os_family }}.yml"
+#
+- name: Import task create_repo.yml
+  import_tasks: create_repo.yml
+  tags: repo
+#
+- name: Import task install_packages.yml
+  import_tasks: install_packages.yml
+  tags: repo
+#
+- name: Import task start_service.yml
+  import_tasks: start_service.yml
+  tags: start
+#
+- name: Import task initial_admin_password.yml
+  import_tasks: initial_admin_password.yml
+  tags: password
+...

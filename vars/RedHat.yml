@@ -1,0 +1,7 @@
+---
+jenkins_repo: https://pkg.jenkins.io/redhat-stable/jenkins.repo
+#
+jenkins_key: https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+#
+jenkins_repo_path: /etc/yum.repos.d/
+#

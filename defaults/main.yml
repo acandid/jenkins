@@ -1,0 +1,8 @@
+---
+# defaults file for jenkins
+#
+jenkins_service: jenkins
+#
+jenkins_packages: jenkins
+#
+jenkins_java: java-1.8.0-openjdk

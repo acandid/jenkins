@@ -1,0 +1,25 @@
+---
+- block:
+    - name: Install jenkins packages Red Hat family.
+      yum:
+        name: "{{ jenkins_packages }}"
+        state: latest
+#
+    - name: Install java Red Hat family.
+      yum:
+        name: "{{ jenkins_java }}"
+        state: present
+  when: ansible_os_family == 'RedHat'
+#
+- block:
+    - name: Install java Debian family.
+      apt:
+        name: "{{ jenkins_java }}"
+        state: present
+#
+    - name: Install jenkins packages Debian family.
+      apt:
+        name: "{{ jenkins_packages }}"
+        state: latest
+  when: ansible_os_family == 'Debian'
+...

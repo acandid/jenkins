@@ -1,0 +1,26 @@
+---
+- block:
+    - name: Create repository Red Hat family.
+      get_url:
+        url: "{{ jenkins_repo }}"
+        dest: "{{ jenkins_repo_path }}"
+#
+    - name: Import rpm key
+      rpm_key:
+        key: "{{ jenkins_key }}"
+        state: present
+  when: ansible_os_family == 'RedHat'
+#
+- block:
+    - name: Add key Debian family
+      apt_key:
+        url: "{{ jenkins_apt_key }}"
+        state: present
+#
+    - name: Create repository Debian family
+      apt_repository:
+        repo: "{{ jenkins_apt_repo }}"
+        state: present
+        filename: jenkins
+  when: ansible_os_family == 'Debian'
+... 
