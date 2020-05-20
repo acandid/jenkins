@@ -27,7 +27,7 @@ Example Playbook
   roles:
 
     - /path/jenkins
----
+...
 ```
 
 Example inventory
